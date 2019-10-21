@@ -1,0 +1,8 @@
+<div class="background" *ngIf="visible" (click)="close()"></div>
+
+<div class="container" [style.visibility]="visible ? 'visible' : 'hidden'">
+  <div class="content" [style.width]="width" [style.height]="height">
+    <ng-container #viewContainerRef></ng-container>
+    <button (click)="close()">close</button>
+  </div>
+</div>
